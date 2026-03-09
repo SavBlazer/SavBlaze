@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18+ - Альбом | Моя Музыка</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        .hero-banner {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b); /* Красный градиент для альбома 18+ */
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-overlay {
+            background: rgba(0,0,0,0.6);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #ff0000;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        .track {
+            background: #111;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 5px solid #ff0000; /* Розовый акцент для альбома */
+            box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+        }
+        .track h3 {
+            color: #ff0000;
+            margin-top: 0;
+        }
+        audio {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ff0000;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: 2px solid #ff0000;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: #ff0000;
+            color: black;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Баннер альбома с розовым градиентом -->
+    <div class="hero-banner" style="background-image: url('img/logo.jpg');">
+        <div class="hero-overlay">
+            <h1>Порок</h1>
+            <p style="font-size: 1.5em; margin: 10px 0;">Страсть • 18+ • Огонь</p>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <a href="index.html"> Главная</a>
+            <a href="album-love.html">Любовь</a>
+            <a href="album-city.html">Город</a>
+        </nav>
+    </header>
+    
+    <main>
+        <a href="index.html" class="back-link">← На главную</a>
+        
+        <section>
+            <h2>Треки альбома</h2>
+            <div class="track">
+                <h3>1. Наша ночь</h3>
+                <p>Когда уже нет сил сдерживаться...</p>
+                <audio controls>
+                    <source src="music/nashanoch.mp3" type="audio/mpeg">
+                    Твой браузер не поддерживает аудио.
+      </audio>
+                <a href="music/nashanoch.mp3" download="SavBlaze-Наша_ночь" class="download-btn">⬇ Скачать трек</a>
+            </div>
+            
+            <div class="track">
+                <h3>2. Расстегни свой лифчик</h3>
+                <p>О том моменте, когда пожар внутри всё сильнее...</p>
+                <audio controls>
+                    <source src="music/rasstegni.mp3" type="audio/mpeg">
+                    Твой браузер не поддерживает аудио.
+                </audio>
+                <a href="music/rasstegni.mp3" download class="download-btn">⬇ Скачать трек</a>
+            </div>
+            
+            <div class="track">
+                <h3>3. Базовый минимум</h3>
+                <p>Минимум на который многие не тянут...</p>
+                <audio controls>
+                    <source src="music/bazoviyminimum.mp3" type="audio/mpeg">
+                    Твой браузер не поддерживает аудио.
+                </audio>
+                <a href="music/bazoviyminimum.mp3" download="SavBlaze-Базовый_минимум" class="download-btn">⬇ Скачать трек</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        &copy; 2026 SavBlaze. Альбом "Порок". Все права защищены.
+    </footer>
+</body>
+</html>
